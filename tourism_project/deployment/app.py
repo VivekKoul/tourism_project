@@ -61,7 +61,7 @@ input_data = pd.DataFrame ([{
 'MonthlyIncome':MonthlyIncome,
 'TypeofContact':contact_type,
 'Occupation':occupation ,
-'Gender':gender ',
+'Gender':gender,
 'ProductPitched': productpitched,
 'MaritalStatus':maritalstatus,
 'Designation' :designation
