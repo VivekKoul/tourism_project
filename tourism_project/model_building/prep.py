@@ -18,7 +18,20 @@ print("Dataset loaded successfully.")
 
 # Drop unique identifier column (not useful for modeling)
 df.drop(columns=['Unnamed: 0','CustomerID'], inplace=True)
+# Fix Gender column
+df['Gender'] = df['Gender'].replace({
+    'Fe Male': 'Female',
+    'Female': 'Female',
+    'Male': 'Male'
+})
 
+# Fix Marital Status column
+df['MaritalStatus'] = df['MaritalStatus'].replace({
+    'Married': 'Married',
+    'Single': 'Single',
+    'Divorced': 'Divorced',
+    'Unmarried':'Single'
+})
 # Encode categorical columns
 label_encoder = LabelEncoder()
 df['TypeofContact'] = label_encoder.fit_transform(df['TypeofContact'])

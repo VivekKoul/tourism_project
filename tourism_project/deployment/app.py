@@ -17,9 +17,9 @@ Please enter the details below to get a revenue prediction.
 # User input  'TypeofContact', 'Occupation', 'Gender', 'ProductPitched','MaritalStatus','Designation'
 contact_type = st.selectbox("TypeofContact", ['Self Enquiry', 'Company Invited'])
 occupation = st.selectbox("Occupation", ['Salaried', 'Free Lancer', 'Small Business', 'Large Business'])
-gender = st.selectbox("Gender", ['Female', 'Male', 'Fe Male'])
+gender = st.selectbox("Gender", ['Female', 'Male'])
 productpitched = st.selectbox("ProductPitched",['Deluxe', 'Basic', 'Standard', 'Super Deluxe', 'King'])
-maritalstatus = st.selectbox("MaritalStatus", ['Single', 'Divorced', 'Married', 'Unmarried'])
+maritalstatus = st.selectbox("MaritalStatus", ['Single', 'Divorced', 'Married''])
 designation = st.selectbox("Designation", ['Manager', 'Executive', 'Senior Manager', 'AVP', 'VP'])
 
 age = st.number_input("Age in Yrs)", min_value=1.0, max_value=100.0, value=18.0)
