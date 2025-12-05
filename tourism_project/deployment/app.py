@@ -24,7 +24,7 @@ designation = st.selectbox("Designation", ['Manager', 'Executive', 'Senior Manag
 
 age = st.number_input("Age in Yrs)", min_value=1.0, max_value=100.0, value=18.0)
 city_tier = st.number_input("Tier)", min_value=1, max_value=3, value=1)
-pitch_duration = st.number_input("Duration Of Pitch", min_value=5, max_value=130, value=1)
+pitch_duration = st.number_input("Duration Of Pitch", min_value=2, max_value=130, value=5)
 no_of_person_visiting = st.number_input("Number Of Person Visiting", min_value=1, max_value=5, value=1)
 no_of_follow_ups = st.number_input("Number Of Follow ups", min_value=1, max_value=6, value=1)
 preferred_property_star = st.number_input("Preferred Property Star", min_value=3, max_value=5, value=3)
